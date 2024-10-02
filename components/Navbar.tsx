@@ -22,7 +22,7 @@ const Navbar = () => {
               <h1 className="text-blue-400 text-xl font-bold">BehindTrader</h1>
             </div>
 
-            {navLists.map((nav, i) => (
+            {navLists.map((nav) => (
               <div
                 key={nav}
                 className="md:px-5 pl-4 text-sm cursor-pointer text-gray hover:font-light hover:text-base hover:text-slate-500 transition-all"
