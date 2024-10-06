@@ -73,7 +73,7 @@ body {
     @apply border-border;
   }
   body {
-    background-color: #121212 !important;
+    background-color: #010313 !important;
     @apply text-foreground;
   }
 }
