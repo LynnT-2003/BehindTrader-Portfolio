@@ -2,14 +2,15 @@ import React, { useEffect } from "react";
 
 export const useOutsideClick = (
   ref: React.RefObject<HTMLDivElement>,
-  callback: Function
+  callback: (event: Event) => void // Specify that the callback expects an Event argument
 ) => {
   useEffect(() => {
-    const listener = (event: any) => {
-      if (!ref.current || ref.current.contains(event.target)) {
+    const listener = (event: Event) => {
+      // Define the type of the event
+      if (!ref.current || ref.current.contains(event.target as Node)) {
         return;
       }
-      callback(event);
+      callback(event); // Pass the event to the callback
     };
 
     document.addEventListener("mousedown", listener);

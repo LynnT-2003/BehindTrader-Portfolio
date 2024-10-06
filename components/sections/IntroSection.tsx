@@ -10,7 +10,7 @@ const IntroSection = () => {
 
   return (
     <div className="w-full h-screen py-20">
-      <h2 className="max-w-7xl pl-4 ml-[10vw] text-xl md:text-5xl font-bold text-white font-sans">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white font-sans">
         Our Services
       </h2>
       <Carousel items={cards} />
