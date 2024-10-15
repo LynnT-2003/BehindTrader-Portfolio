@@ -3,7 +3,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { useRouter } from "next/navigation";
 
-const navLists = ["Nav 1", "Nav 2"];
+const navLists = ["CopyTrade", "Signal Room", "Private Course", "EA"];
 
 const Navbar = () => {
   const router = useRouter();
@@ -13,7 +13,10 @@ const Navbar = () => {
       <header className="md:px-0 px-5 w-[1320px] py-5 flex justify-between">
         <nav className="flex w-full items-center justify-center screen-max-width">
           <div className="flex flex-1 items-center ">
-            <div className="md:pr-15 py-1 pr-5 cursor-pointer">
+            <div
+              className="md:pr-15 py-1 pr-5 cursor-pointer"
+              onClick={() => router.push("/")}
+            >
               {/* <img
                 src="/logo.png"
                 width={128}
@@ -38,7 +41,7 @@ const Navbar = () => {
             className="bg-slate-700 text-white text-sm"
             onClick={() => {}}
           >
-            Button
+            Log in
           </Button>
         </div>
       </header>

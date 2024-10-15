@@ -1,15 +1,15 @@
-"use client";
 import Image from "next/image";
-import React from "react";
+import React, { forwardRef } from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
-const IntroSection = () => {
+// Use forwardRef to allow the parent component to pass a ref
+const IntroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
-    <div className="w-full h-screen py-20">
+    <div ref={ref} className="w-full h-screen py-20">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white font-sans">
         Our Services
       </h2>
@@ -17,7 +17,10 @@ const IntroSection = () => {
     </div>
   );
   // copytrade, signal room, private course
-};
+});
+
+// Ensure to set the displayName for better debugging in React DevTools
+IntroSection.displayName = "IntroSection";
 
 const DummyContent = () => {
   return (
@@ -26,7 +29,7 @@ const DummyContent = () => {
         return (
           <div
             key={"dummy-content" + index}
-            className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4"
+            className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
           >
             <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
               <span className="font-bold text-neutral-700 dark:text-neutral-200">
@@ -53,25 +56,25 @@ const DummyContent = () => {
 
 const data = [
   {
-    category: "Copytrading",
-    title: "CopyTrade together with us.",
-    src: "/services/trading.jpg",
+    category: "",
+    title: "",
+    src: "/services/3.png",
     width: 500,
     height: 300,
     content: <DummyContent />,
   },
   {
-    category: "Signal Rooms",
-    title: "Get access to our private signal rooms.",
-    src: "/services/signal.jpg",
+    category: "",
+    title: "",
+    src: "/services/1.png",
     width: 500,
     height: 300,
     content: <DummyContent />,
   },
   {
-    category: "Private Course",
-    title: "Learn through our exclusive course.",
-    src: "/services/course.jpg",
+    category: "",
+    title: "",
+    src: "/services/2.png",
     width: 500,
     height: 300,
     content: <DummyContent />,
