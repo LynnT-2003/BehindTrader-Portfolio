@@ -4,8 +4,14 @@ import { Button } from "../ui/button";
 const SignalRoomSection = () => {
   return (
     <div className="flex items-center justify-center py-12 h-screen bg-brandColor">
-      <div className="w-screen px-[10vw] flex">
-        <div className="w-1/2 text-white px-12 flex items-center justify-center">
+      <div className="w-[1250px] flex justify-between">
+        {" "}
+        <div className=" w-1/2 text-white items-end ">
+          <div className="flex flex-col hover:cursor-pointer transition-transform duration-300 transform hover:scale-105">
+            <img src="/signal/week2.jpg" className="h-[512px] w-[512px]" />
+          </div>
+        </div>
+        <div className="w-1/2 text-white flex items-center">
           <div className="flex flex-col">
             <h1 className="font-bold text-4xl mb-8">
               Signal Rooms Performance
@@ -21,11 +27,6 @@ const SignalRoomSection = () => {
               and experience trading with confidence.
             </span>
             <Button className="text-white mt-8">More Details</Button>
-          </div>
-        </div>
-        <div className=" w-1/2 text-white flex items-center justify-center">
-          <div className="flex flex-col hover:cursor-pointer transition-transform duration-300 transform hover:scale-105">
-            <img src="/signal/week2.jpg" className="mx-12 h-[512px]" />
           </div>
         </div>
       </div>

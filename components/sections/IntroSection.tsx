@@ -12,15 +12,14 @@ const IntroSection = forwardRef<
   ));
 
   return (
-    <div
-      ref={ref}
-      className="flex flex-col h-screen justify-center w-full pt-12"
-      {...props}
-    >
-      <h2 className="flex pl-48 text-xl md:text-5xl font-bold text-white font-sans">
-        Our Services
-      </h2>
-      <Carousel items={cards} />
+    // <div ref={ref} className="h-screen justify-center pt-12" {...props}>
+    <div className="flex items-center justify-center py-12 h-screen bg-brandColor">
+      <div className="w-[1325px] flex flex-col justify-between">
+        <h2 className="flex pl-12 text-xl md:text-5xl font-bold text-white font-sans">
+          Our Services
+        </h2>
+        <Carousel items={cards} />
+      </div>
     </div>
   );
 });
