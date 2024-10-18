@@ -3,14 +3,14 @@ import React, { forwardRef } from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 
 // Use forwardRef to allow the parent component to pass a ref
-const IntroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const IntroSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
     <div ref={ref} className="flex flex-col justify-center w-full pt-12 ">
-      <h2 className="flex max-w-7xl pl-48 text-xl md:text-5xl font-bold text-white font-sans">
+      <h2 className="flex pl-48 text-xl md:text-5xl font-bold text-white font-sans">
         Our Services
       </h2>
       <Carousel items={cards} />
