@@ -15,11 +15,9 @@ export default function Home() {
 
   return (
     <div>
-      <div className="">
-        <HeroSection scrollToIntro={scrollToIntro} />
-        <IntroSection ref={introSectionRef} />
-        <SignalRoomSection />
-      </div>
+      <HeroSection scrollToIntro={scrollToIntro} />
+      <IntroSection ref={introSectionRef} />
+      <SignalRoomSection />
     </div>
   );
 }
