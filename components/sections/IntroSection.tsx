@@ -9,8 +9,8 @@ const IntroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
   ));
 
   return (
-    <div ref={ref} className="w-full h-screen py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-white font-sans">
+    <div ref={ref} className="flex flex-col justify-center w-full pt-12 ">
+      <h2 className="flex max-w-7xl pl-48 text-xl md:text-5xl font-bold text-white font-sans">
         Our Services
       </h2>
       <Carousel items={cards} />

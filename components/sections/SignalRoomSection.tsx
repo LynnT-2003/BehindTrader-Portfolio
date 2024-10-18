@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 const SignalRoomSection = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-brandColor">
+    <div className="flex items-center justify-center py-12 bg-brandColor">
       <div className="w-screen px-24 flex">
         <div className="w-1/2 text-white pl-12 flex items-center justify-center">
           <div className="flex flex-col">
