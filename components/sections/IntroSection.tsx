@@ -14,7 +14,7 @@ const IntroSection = forwardRef<
   return (
     <div
       ref={ref}
-      className="flex flex-col justify-center w-full pt-12"
+      className="flex flex-col h-screen justify-center w-full pt-12"
       {...props}
     >
       <h2 className="flex pl-48 text-xl md:text-5xl font-bold text-white font-sans">

@@ -3,9 +3,9 @@ import { Button } from "../ui/button";
 
 const SignalRoomSection = () => {
   return (
-    <div className="flex items-center justify-center py-12 bg-brandColor">
-      <div className="w-screen px-24 flex">
-        <div className="w-1/2 text-white pl-12 flex items-center justify-center">
+    <div className="flex items-center justify-center py-12 h-screen bg-brandColor">
+      <div className="w-screen px-[10vw] flex">
+        <div className="w-1/2 text-white px-12 flex items-center justify-center">
           <div className="flex flex-col">
             <h1 className="font-bold text-4xl mb-8">
               Signal Rooms Performance
@@ -25,12 +25,7 @@ const SignalRoomSection = () => {
         </div>
         <div className=" w-1/2 text-white flex items-center justify-center">
           <div className="flex flex-col hover:cursor-pointer transition-transform duration-300 transform hover:scale-105">
-            <img
-              src="/signal/week2.jpg"
-              width={400}
-              height={400}
-              className="ml-auto"
-            />
+            <img src="/signal/week2.jpg" className="mx-12 h-[512px]" />
           </div>
         </div>
       </div>
