@@ -85,4 +85,5 @@ const data = [
   },
 ];
 
+IntroSection.displayName = "IntroSection";
 export default IntroSection;
