@@ -40,7 +40,7 @@ export function NavbarDemo() {
   console.log("Navbar Visibility:", isVisible);
 
   return (
-    <div className="relative w-full flex items-center justify-center">
+    <div className="hidden md:block relative w-full flex items-center justify-center">
       <Navbar isVisible={isVisible} />
     </div>
   );

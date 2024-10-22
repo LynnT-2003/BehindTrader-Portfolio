@@ -3,7 +3,7 @@ export const projects = [
     title: "Gas Station",
     profit: "Cumulative Profit 87%",
     avg_profit: "Average: 10% / month",
-    link: "https://stripe.com",
+    link: "https://www.myfxbook.com/members/JeedJaadRoleplay/gas-station-mmtfx/10604068",
   },
   {
     title: "Dollar Cafe Chocolate",
@@ -19,6 +19,12 @@ export const projects = [
   },
   {
     title: "Dollar Cafe IceCream",
+    profit: "Cumulative Profit 87%",
+    avg_profit: "Average: 10% / month",
+    link: "https://stripe.com",
+  },
+  {
+    title: "Dollar Cafe Strawberry",
     profit: "Cumulative Profit 87%",
     avg_profit: "Average: 10% / month",
     link: "https://stripe.com",

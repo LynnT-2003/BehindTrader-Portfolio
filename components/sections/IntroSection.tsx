@@ -14,10 +14,10 @@ const IntroSection = forwardRef<
   return (
     <div
       ref={ref}
-      className="flex items-center justify-center py-12 h-screen bg-brandColor"
+      className="h-screen md:h-full flex items-center justify-center py-12 h-screen bg-brandColor"
     >
-      <div className="w-[1325px] flex flex-col justify-between">
-        <h2 className="flex pl-12 text-xl md:text-5xl font-bold text-white font-sans">
+      <div className="pl-12 md:pl-0 w-screen md:w-[1325px] flex flex-col justify-between">
+        <h2 className="flex md:pl-12 text-3xl md:text-5xl font-bold text-white font-sans">
           Our Services
         </h2>
         <Carousel items={cards} />

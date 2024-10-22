@@ -115,7 +115,7 @@ export const CardTitle = ({
   return (
     <h4
       className={cn(
-        "text-zinc-100 text-xl font-bold tracking-wide",
+        "text-zinc-100 text-lg font-bold tracking-wide",
         isFeatured && isHovered
           ? "text-yellow-300"
           : isFeatured
@@ -144,7 +144,7 @@ export const CardDescription = ({
     <div>
       <p
         className={cn(
-          "mt-8 text-lg tracking-wide leading-relaxed",
+          "mt-8 text-md tracking-wide leading-relaxed",
           isFeatured && isHovered ? "text-yellow-500" : "text-white", // Change to yellow on hover for featured
           className
         )}
@@ -170,7 +170,7 @@ export const CardAverage = ({
     <div>
       <p
         className={cn(
-          "mt-4 text-lg tracking-wide leading-relaxed",
+          "mt-4 text-md tracking-wide leading-relaxed",
           isFeatured && isHovered ? "text-yellow-500" : "text-white", // Change to yellow on hover for featured
           className
         )}
