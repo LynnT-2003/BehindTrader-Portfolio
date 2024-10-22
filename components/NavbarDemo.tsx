@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { HoveredLink, Menu, MenuItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export function NavbarDemo() {
   const [isVisible, setIsVisible] = useState(true);
@@ -52,6 +53,7 @@ function Navbar({
   className?: string;
   isVisible: boolean;
 }) {
+  const router = useRouter();
   const [active, setActive] = useState<string | null>(null);
 
   return (
@@ -66,12 +68,40 @@ function Navbar({
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="BehindTrader">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">BehindTrader</HoveredLink>
-            <HoveredLink href="/web-dev">BehindTrader News</HoveredLink>
-            <HoveredLink href="/web-dev">BehindTrader Podcast</HoveredLink>
+            <h1
+              className="text-black hover:cursor-pointer"
+              onClick={() => {
+                router.push("/");
+              }}
+            >
+              BehindTrader
+            </h1>
+            <h1
+              className="text-black hover:cursor-pointer"
+              onClick={() => {
+                router.push("/");
+              }}
+            >
+              BehindTrader News
+            </h1>
+            <h1
+              className="text-black hover:cursor-pointer"
+              onClick={() => {
+                router.push("/Podcast");
+              }}
+            >
+              BehindTrader Podcast
+            </h1>
           </div>
         </MenuItem>
-        <h1 className="text-white hover:cursor-pointer">CopyTrade</h1>
+        <h1
+          className="text-white hover:cursor-pointer"
+          onClick={() => {
+            router.push("/CopyTrade");
+          }}
+        >
+          CopyTrade
+        </h1>
         <h1 className="text-white hover:cursor-pointer">Signal Rooms</h1>
         <h1 className="text-white hover:cursor-pointer">Education</h1>
         <h1 className="text-white hover:cursor-pointer">About Us</h1>
