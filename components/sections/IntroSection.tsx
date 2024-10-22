@@ -6,14 +6,16 @@ import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 const IntroSection = forwardRef<
   HTMLDivElement,
   React.HTMLProps<HTMLDivElement>
->((props, ref) => {
+>((_, ref) => {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
   ));
 
   return (
-    // <div ref={ref} className="h-screen justify-center pt-12" {...props}>
-    <div className="flex items-center justify-center py-12 h-screen bg-brandColor">
+    <div
+      ref={ref}
+      className="flex items-center justify-center py-12 h-screen bg-brandColor"
+    >
       <div className="w-[1325px] flex flex-col justify-between">
         <h2 className="flex pl-12 text-xl md:text-5xl font-bold text-white font-sans">
           Our Services
