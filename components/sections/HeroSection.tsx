@@ -8,12 +8,7 @@ interface HeroSectionProps {
 const HeroSection: React.FC<HeroSectionProps> = ({ scrollToIntro }) => {
   return (
     <div className="relative w-screen h-[95vh] md:h-screen mx-auto rounded-md overflow-hidden flex flex-col items-center justify-center">
-      <Vortex
-        rangeY={800}
-        particleCount={550}
-        baseHue={150}
-        className="flex items-center flex-col justify-center px-8 md:px-60 pb-4 w-full h-full"
-      >
+      <div className="flex items-center flex-col justify-center px-8 md:px-60 pb-4 w-full h-full">
         <img src="/logo.png" width={256} className="mb-10" />
 
         <h2 className="text-white text-2xl md:text-5xl md:max-w-4xl font-bold text-center">
@@ -30,7 +25,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToIntro }) => {
             Get Started
           </button>
         </div>
-      </Vortex>
+      </div>
     </div>
   );
 };
