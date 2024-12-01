@@ -40,7 +40,7 @@ export function NavbarDemo() {
   console.log("Navbar Visibility:", isVisible);
 
   return (
-    <div className="hidden md:block relative w-full flex items-center justify-center">
+    <div className="md:block relative w-full flex items-center justify-center">
       <Navbar isVisible={isVisible} />
     </div>
   );
@@ -66,45 +66,31 @@ function Navbar({
       )}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="BehindTrader">
-          <div className="flex flex-col space-y-4 text-sm">
-            <h1
-              className="text-black hover:cursor-pointer"
-              onClick={() => {
-                router.push("/");
-              }}
-            >
-              BehindTrader
-            </h1>
-            <h1
-              className="text-black hover:cursor-pointer"
-              onClick={() => {
-                router.push("/");
-              }}
-            >
-              BehindTrader News
-            </h1>
-            <h1
-              className="text-black hover:cursor-pointer"
-              onClick={() => {
-                router.push("/Podcast");
-              }}
-            >
-              BehindTrader Podcast
-            </h1>
-          </div>
-        </MenuItem>
         <h1
-          className="text-white hover:cursor-pointer"
+          className="text-white hover:text-yellow-500 hover:cursor-pointer hover:border-b-4 hover:pb-2 border-spacing-4 border-yellow-500 ease-in-out duration-100"
+          onClick={() => {
+            router.push("/");
+          }}
+        >
+          BehindTrader
+        </h1>
+        <h1
+          className="text-white hover:text-yellow-500 hover:cursor-pointer hover:border-b-4 hover:pb-2 border-spacing-4 border-yellow-500 ease-in-out duration-100"
           onClick={() => {
             router.push("/CopyTrade");
           }}
         >
           CopyTrade
         </h1>
-        <h1 className="text-white hover:cursor-pointer">Signal Rooms</h1>
-        <h1 className="text-white hover:cursor-pointer">Education</h1>
-        <h1 className="text-white hover:cursor-pointer">About Us</h1>
+        <h1 className="text-white hover:text-yellow-500 hover:cursor-pointer hover:border-b-4 hover:pb-2 border-spacing-4 border-yellow-500 ease-in-out duration-100">
+          Signal
+        </h1>
+        <h1 className="text-white hover:text-yellow-500 hover:cursor-pointer hover:border-b-4 hover:pb-2 border-spacing-4 border-yellow-500 ease-in-out duration-100">
+          Education
+        </h1>
+        <h1 className="text-white hover:text-yellow-500 hover:cursor-pointer hover:border-b-4 hover:pb-2 border-spacing-4 border-yellow-500 ease-in-out duration-100">
+          About
+        </h1>
       </Menu>
     </div>
   );

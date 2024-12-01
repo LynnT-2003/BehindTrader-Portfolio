@@ -21,7 +21,7 @@ const SignalRoomSection = () => {
             <h1 className="hidden md:block font-bold text-4xl mb-8">
               Signal Rooms Performance
             </h1>
-            <span className="mt-8 text-md text-justify font-sans leading-loose tracking-wider ">
+            <span className="mt-8 text-md text-justify font-sans md:leading-loose tracking-wider ">
               Maximize Your Trading Success with Our Expert Signal Rooms! Join
               our exclusive trading signal rooms and elevate your trading game!
               With a proven track record of consistent profits and advanced

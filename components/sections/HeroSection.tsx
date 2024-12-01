@@ -14,8 +14,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToIntro }) => {
         <h2 className="text-white text-2xl md:text-5xl md:max-w-4xl font-bold text-center">
           The Goal to be Successful Person
         </h2>
-        <p className="text-white text-sm md:text-2xl md:max-w-2xl mt-6 text-center">
-          ร่วมสร้างสังคมเทรดที่มีคุณภาพไปด้วยกันกับ BehindTrader
+        <p className="text-white text-sm md:text-2xl md:max-w-2xl mt-6 text-center font-sans font-light">
+          Join us in building a quality <br />
+          trading community with BehindTrader.
         </p>
         <div className="flex flex-row items-center gap-2 md:gap-4 mt-8">
           <button

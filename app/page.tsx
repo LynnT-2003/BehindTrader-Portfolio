@@ -14,7 +14,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <HeroSection scrollToIntro={scrollToIntro} />
       <IntroSection ref={introSectionRef} />
       <SignalRoomSection />

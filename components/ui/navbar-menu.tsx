@@ -45,15 +45,15 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && (
-            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4 ml-[2rem] hover:cursor-pointer">
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                className="bg-white hover:cursor-pointer dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation
-                  className="w-max h-full p-4"
+                  className="w-max h-full p-4 hover:cursor-pointer"
                 >
                   {children}
                 </motion.div>
@@ -76,7 +76,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="w-[1024px] relative rounded-full border border-transparent bg-slate-900 border-white/[0.2] shadow-input flex justify-center mx-auto space-x-20 px-8 mt-4 py-6 "
+      className="md:w-[800px] z-99 relative md:rounded-full bg-slate-900 md:bg-slate-900 hover:cursor-pointer shadow-input flex justify-center mx-auto space-x-5 md:space-x-20 px-8 md:mt-4 py-4 md:py-6 text-xs md:text-base cursor-pointer"
     >
       {children}
     </nav>
