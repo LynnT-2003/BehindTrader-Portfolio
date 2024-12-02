@@ -85,7 +85,12 @@ function Navbar({
         <h1 className="text-white hover:text-yellow-500 hover:cursor-pointer hover:border-b-4 hover:pb-2 border-spacing-4 border-yellow-500 ease-in-out duration-100">
           Signal
         </h1>
-        <h1 className="text-white hover:text-yellow-500 hover:cursor-pointer hover:border-b-4 hover:pb-2 border-spacing-4 border-yellow-500 ease-in-out duration-100">
+        <h1
+          className="text-white hover:text-yellow-500 hover:cursor-pointer hover:border-b-4 hover:pb-2 border-spacing-4 border-yellow-500 ease-in-out duration-100"
+          onClick={() => {
+            router.push("/Education");
+          }}
+        >
           Education
         </h1>
         <h1 className="text-white hover:text-yellow-500 hover:cursor-pointer hover:border-b-4 hover:pb-2 border-spacing-4 border-yellow-500 ease-in-out duration-100">
